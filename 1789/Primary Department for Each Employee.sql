@@ -9,5 +9,6 @@ from (
 )
 where cnt = 1
 
+
 -- select employee_id, department_id, count(department_id) over(partition by employee_id) cnt
 -- from Employee
