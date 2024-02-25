@@ -1,8 +1,14 @@
-# Write your MySQL query statement below
+# having
 SELECT class
-FROM (
-    SELECT class,COUNT(student) as cnt
-    FROM Courses
-    GROUP BY class
-) C
-WHERE C.cnt >= 5
+FROM Courses
+GROUP BY class
+HAVING COUNT(student) >= 5
+
+# subQuery
+-- SELECT class
+-- FROM (
+--     SELECT class,COUNT(student) as cnt
+--     FROM Courses
+--     GROUP BY class
+-- ) C
+-- WHERE C.cnt >= 5
